@@ -11,7 +11,8 @@ RUN apt-get update && \
     expect \
     gnupg \
     jq \
-    lsb-release && \
+    lsb-release \
+    openssh-client && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists && \
     chmod 755 /entrypoint.sh && \
