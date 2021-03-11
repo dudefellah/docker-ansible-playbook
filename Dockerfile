@@ -10,6 +10,7 @@ RUN apt-get update && \
     curl \
     expect \
     gnupg \
+    jq \
     lsb-release && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists && \
