@@ -1,4 +1,4 @@
-FROM python:3-buster
+FROM python:3-slim-buster
 
 COPY entrypoint.sh /entrypoint.sh
 COPY requirements.txt /tmp/requirements.txt
