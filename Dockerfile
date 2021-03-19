@@ -13,6 +13,7 @@ RUN apt-get update && \
     gnupg \
     jq \
     libcurl4-openssl-dev \
+    libssl-dev \
     lsb-release \
     openssh-client && \
     apt-get clean && \
