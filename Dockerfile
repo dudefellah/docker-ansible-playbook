@@ -11,6 +11,7 @@ RUN apt-get update && \
     expect \
     gnupg \
     jq \
+    libcurl4-openssl-dev \
     lsb-release \
     openssh-client && \
     apt-get clean && \
