@@ -9,6 +9,7 @@ RUN apt-get update && \
     ca-certificates \
     curl \
     expect \
+    gcc \
     gnupg \
     jq \
     libcurl4-openssl-dev \
