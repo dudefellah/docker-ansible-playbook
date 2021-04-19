@@ -14,6 +14,7 @@ RUN apt-get update && \
     jq \
     libcurl4-openssl-dev \
     libssl-dev \
+    libxml2-dev \
     lsb-release \
     openssh-client && \
     apt-get clean && \
