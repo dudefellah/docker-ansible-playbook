@@ -10,6 +10,7 @@ RUN apt-get update && \
     curl \
     expect \
     gcc \
+    git \
     gnupg \
     jq \
     libcurl4-openssl-dev \
