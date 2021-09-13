@@ -12,12 +12,18 @@ RUN apt-get update && \
     gnupg \
     jq \
     lsb-release \
-    openssh-client && \
+    openssh-client \
+    sudo && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists && \
     chmod 755 /entrypoint.sh && \
     adduser --disabled-password --gecos '' ansible && \
     chown ansible:ansible /tmp/requirements.txt
+
+COPY ansible-sudo /etc/sudoers.d/ansible-sudo
+
+RUN chown root:root /etc/sudoers.d/ansible-sudo && \
+    chmod 600 /etc/sudoers.d/ansible-sudo
 
 USER ansible
 WORKDIR /home/ansible
